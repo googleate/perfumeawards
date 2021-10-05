@@ -1,5 +1,17 @@
 {{ define "main" }}
-
+<head>
+    <title>Center an Image using text align center</title>
+    <style>
+      .img-container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-container"> <!-- Block parent element -->
+      <img src="/images/blank.jpg" alt="Perfume Awards">
+    </div>
+  </body>
 {{ if eq .Params.layout "1" }}
 <!-- featured post -->
 <section class="overflow-hidden">
