@@ -1,8 +1,5 @@
 {{ define "main" }}
-    <div class="img-container"> <!-- Block parent element -->
-      <img src="/images/blank.jpg" alt="Perfume Awards">
-    </div>
- 
+    
 {{ if eq .Params.layout "1" }}
 <!-- featured post -->
 <section class="overflow-hidden">
@@ -29,9 +26,6 @@
 
 {{ else if (eq .Params.layout "2")}}
 
-  <div>
-      <img src="/images/blank.jpg" alt="Perfume Awards">
-    </div>
 <!-- hero area -->
 <section class="hero-section">
   <div class="container">
