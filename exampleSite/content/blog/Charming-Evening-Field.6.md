@@ -2,7 +2,7 @@
 title: El premio
 date: '2019-05-14T14:46:10.000+06:00'
 description: El trofeo
-type: post
+type: featured
 image: "/images/premio.jpg"
 categories: []
 tags: []
