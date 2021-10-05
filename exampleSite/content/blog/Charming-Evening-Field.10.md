@@ -1,5 +1,5 @@
 ---
-title: Base de Datos
+title: Data Base
 date: '2019-05-14T14:46:10.000+06:00'
 description: Bases de Datos
 type: post
