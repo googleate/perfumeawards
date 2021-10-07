@@ -1,28 +1,23 @@
 {{ define "main" }}
 
 {{ if eq site.Params.layout "1" }}
-<!-- featured post -->
-<section class="overflow-hidden">
-  <div class="container-fluid p-sm-0">
-    <div class="row featured-post-slider">
-      {{ range (where site.RegularPages "Type" "featured")}}
-      <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-        <article class="card bg-dark text-center text-white border-0 rounded-0">
-          <img class="card-img rounded-0 img-fluid w-100" src="{{.Params.Image | absURL}}" alt="post-thumb">
-          <div class="card-img-overlay">
-            <div class="card-content">
-              <p class="text-uppercase">{{range .Params.Categories}}{{. | humanize}}{{end}}</p>
-              <h4 class="card-title mb-4"><a class="text-white" href="{{.Permalink}}">{{.Title}}</a></h4>
-              <a class="btn btn-outline-light" href="{{.Permalink}}">Más</a>
-            </div>
-          </div>
-        </article>
+<!-- banner -->
+{{ with $data.homepage.banner }}
+<section class="slider" style="background-image: url('/images/blank.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>PERFUME AWARDS 2021</h1>
+          <p> EL MEJOR PERFUME</p>
+        </div>
       </div>
-      {{ end }}
     </div>
   </div>
 </section>
-<!-- /featured post -->
+{{ end }}
+{{ end }}
+<!-- /banner -->
 
 {{ else if (eq site.Params.layout "2")}}
 
